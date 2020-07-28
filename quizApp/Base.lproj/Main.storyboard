@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizAppBack" translatesAutoresizingMaskIntoConstraints="NO" id="Nhv-H4-SD8">
+                                <rect key="frame" x="0.0" y="53" width="414" height="737"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czv-6b-s7a">
+                                <rect key="frame" x="143" y="712" width="128" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EfI-1x-tAP" kind="show" id="26g-Ix-2iF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13746216889999999" green="0.14500659699999999" blue="0.21422910689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eZc-m6-MfI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
+        </scene>
+        <!--PickA Photo View Controller-->
+        <scene sceneID="WRW-pv-fr8">
+            <objects>
+                <viewController id="EfI-1x-tAP" customClass="pickAPhotoViewController" customModule="quizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aXL-DJ-KGG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-5u-rQc">
+                                <rect key="frame" x="107" y="376" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_kourosh-qaffari-rrhhzityizg-unsplash"/>
+                                <connections>
+                                    <action selector="newDodie:" destination="EfI-1x-tAP" eventType="touchUpInside" id="XOC-Xi-zCu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tue-CF-qrD">
+                                <rect key="frame" x="107" y="168" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DEz-39-obJ"/>
+                                </constraints>
+                                <state key="normal" image="rsz_leonides-ruvalcabar-kvczffawb5y-unsplash"/>
+                                <connections>
+                                    <action selector="oldDodie:" destination="EfI-1x-tAP" eventType="touchUpInside" id="oZw-Y7-hAu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64I-JU-syo">
+                                <rect key="frame" x="62" y="62" width="290" height="82"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.61529063307809062" green="0.59039152804249251" blue="0.79885848445595853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pictureButton:" destination="EfI-1x-tAP" eventType="touchUpInside" id="huu-Ff-IIF"/>
+                                    <segue destination="QBH-kM-xpS" kind="show" id="Uo8-SG-rtn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pick a picture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ac-l4-4xh">
+                                <rect key="frame" x="55" y="55" width="305" height="89"/>
+                                <color key="backgroundColor" red="0.77254901960784317" green="0.75294117647058822" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="textColor" red="0.23030123459999999" green="0.22285273010000001" blue="0.296875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkP-qQ-SwS">
+                                <rect key="frame" x="107" y="584" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_danielle-dolson-yen9xfiuafy-unsplash"/>
+                                <connections>
+                                    <action selector="quarDodie:" destination="EfI-1x-tAP" eventType="touchUpInside" id="ViG-hT-uWa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.14509803921568626" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tue-CF-qrD" firstAttribute="top" secondItem="64I-JU-syo" secondAttribute="bottom" constant="24" id="AN8-Ug-lQf"/>
+                            <constraint firstItem="2Ac-l4-4xh" firstAttribute="leading" secondItem="Dbf-MW-P3f" secondAttribute="leading" constant="55" id="BW5-Go-Cya"/>
+                            <constraint firstItem="jKQ-5u-rQc" firstAttribute="leading" secondItem="tue-CF-qrD" secondAttribute="leading" id="Can-ma-LhT"/>
+                            <constraint firstItem="tue-CF-qrD" firstAttribute="centerX" secondItem="aXL-DJ-KGG" secondAttribute="centerX" id="EHr-vz-dhv"/>
+                            <constraint firstItem="jKQ-5u-rQc" firstAttribute="top" secondItem="tue-CF-qrD" secondAttribute="bottom" constant="8" id="JnX-w9-Nws"/>
+                            <constraint firstItem="tue-CF-qrD" firstAttribute="leading" secondItem="Dbf-MW-P3f" secondAttribute="leading" constant="107" id="MoM-Ja-gWF"/>
+                            <constraint firstItem="tue-CF-qrD" firstAttribute="top" secondItem="aXL-DJ-KGG" secondAttribute="top" constant="168" id="Qhv-cg-46g"/>
+                            <constraint firstItem="2Ac-l4-4xh" firstAttribute="bottom" secondItem="64I-JU-syo" secondAttribute="bottom" id="RcJ-Zs-I89"/>
+                            <constraint firstItem="pkP-qQ-SwS" firstAttribute="top" secondItem="jKQ-5u-rQc" secondAttribute="bottom" constant="8" id="YRb-58-4lK"/>
+                            <constraint firstItem="pkP-qQ-SwS" firstAttribute="leading" secondItem="jKQ-5u-rQc" secondAttribute="leading" id="gk6-jI-wrs"/>
+                            <constraint firstItem="tue-CF-qrD" firstAttribute="centerX" secondItem="64I-JU-syo" secondAttribute="centerX" id="icj-h7-x1q"/>
+                            <constraint firstItem="2Ac-l4-4xh" firstAttribute="centerX" secondItem="64I-JU-syo" secondAttribute="centerX" id="xWa-Zu-fma"/>
+                            <constraint firstItem="2Ac-l4-4xh" firstAttribute="top" secondItem="Dbf-MW-P3f" secondAttribute="top" constant="55" id="yA1-wz-XJf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dbf-MW-P3f"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Dl-Jx-8WV"/>
+                    <connections>
+                        <outlet property="pictureLabel" destination="2Ac-l4-4xh" id="xJv-zG-A9T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWg-C5-w8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571.01449275362324" y="116.51785714285714"/>
+        </scene>
+        <!--PickA Lyric View Controller-->
+        <scene sceneID="Ruh-Ns-LV3">
+            <objects>
+                <viewController id="QBH-kM-xpS" customClass="pickALyricViewController" customModule="quizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lIE-z3-plF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nF-LW-76Z">
+                                <rect key="frame" x="107" y="165" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_patrick-assale-3384kpjfeko-unsplash">
+                                    <color key="titleColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="oldDodieLyric:" destination="QBH-kM-xpS" eventType="touchUpInside" id="z6K-hH-Ptx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmT-UO-6Ha">
+                                <rect key="frame" x="107" y="377" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="rsz_diego-gonzalez-p92w9igyahg-unsplash"/>
+                                <connections>
+                                    <action selector="newDodieLyric:" destination="QBH-kM-xpS" eventType="touchUpInside" id="18M-zZ-zkd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsp-cu-INi">
+                                <rect key="frame" x="107" y="584" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_cody-board-y4d9lt7uzhm-unsplash"/>
+                                <connections>
+                                    <action selector="quarDodieLyric:" destination="QBH-kM-xpS" eventType="touchUpInside" id="Ku0-aw-TlD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="She smells like lemongrass and sleep" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd7-PS-w3u">
+                                <rect key="frame" x="107" y="237" width="148" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Someone hold me down before I book a flight to your front door" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcz-4r-buJ">
+                                <rect key="frame" x="107" y="584" width="200" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2051114299" green="0.2163408376" blue="0.25999838079999998" alpha="0.54789282569999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tell them you'd never dream of living behind the door" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7R-il-Aja">
+                                <rect key="frame" x="112" y="377" width="195" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20511142986483505" green="0.21634083759032111" blue="0.2599983808290155" alpha="0.54789282570422537" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5Z-xL-yqo">
+                                <rect key="frame" x="62" y="61" width="290" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.61529063309999998" green="0.59039152800000005" blue="0.79885848449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lyricButton:" destination="QBH-kM-xpS" eventType="touchUpInside" id="VS1-Eo-qYT"/>
+                                    <action selector="pictureButton:" destination="EfI-1x-tAP" eventType="touchUpInside" id="Xx5-jg-2eV"/>
+                                    <segue destination="N1u-hp-WZh" kind="show" id="fjV-7S-54d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a lyric" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD2-yb-vSV">
+                                <rect key="frame" x="55" y="54" width="305" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="textColor" red="0.23030123459999999" green="0.22285273010000001" blue="0.296875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13746216889999999" green="0.14500659699999999" blue="0.21422910689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="xdv-8B-tXO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WmB-Ya-bDi"/>
+                    <connections>
+                        <outlet property="lyricLabel" destination="kD2-yb-vSV" id="o44-vW-2wO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkk-VY-nj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195.6521739130435" y="116.51785714285714"/>
+        </scene>
+        <!--Pick An Artist View Controller-->
+        <scene sceneID="oAB-RC-90i">
+            <objects>
+                <viewController id="N1u-hp-WZh" customClass="pickAnArtistViewController" customModule="quizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBk-AA-Wen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWu-Sx-GsF">
+                                <rect key="frame" x="119" y="372" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_twice"/>
+                                <connections>
+                                    <action selector="oldDodieArtist:" destination="N1u-hp-WZh" eventType="touchUpInside" id="goq-rw-WGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxq-rQ-laR">
+                                <rect key="frame" x="119" y="583" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_sbareilles"/>
+                                <connections>
+                                    <action selector="newDodieArtist:" destination="N1u-hp-WZh" eventType="touchUpInside" id="M1Q-B3-OyU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwH-Rd-e9q">
+                                <rect key="frame" x="119" y="162" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" backgroundImage="rsz_tswift"/>
+                                <connections>
+                                    <action selector="quarDodieArtist:" destination="N1u-hp-WZh" eventType="touchUpInside" id="NsL-KO-0hp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi8-EK-rcd">
+                                <rect key="frame" x="62" y="62" width="290" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.61529063309999998" green="0.59039152800000005" blue="0.79885848449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="artistButton:" destination="N1u-hp-WZh" eventType="touchUpInside" id="b6v-R3-oba"/>
+                                    <action selector="pictureButton:" destination="EfI-1x-tAP" eventType="touchUpInside" id="X6A-hW-q0t"/>
+                                    <segue destination="Uiw-rm-zcC" kind="show" id="nXK-Tv-TQI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick another artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6y-Ep-dsE">
+                                <rect key="frame" x="34" y="53" width="347" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="textColor" red="0.23030123459999999" green="0.22285273010000001" blue="0.296875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1374776959" green="0.144997716" blue="0.21827217939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ECH-53-lHn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eKV-PE-KoT"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="s6y-Ep-dsE" id="cf9-lY-zuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLs-O2-RTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811.594202898551" y="116.51785714285714"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="70D-vN-xbA">
+            <objects>
+                <viewController id="Uiw-rm-zcC" customClass="endViewController" customModule="quizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hEC-0e-9Ri">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfY-7m-KLs">
+                                <rect key="frame" x="10" y="349" width="384" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <color key="textColor" red="0.23030123459999999" green="0.22285273010000001" blue="0.296875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXt-tm-1oC">
+                                <rect key="frame" x="106" y="723" width="202" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="37"/>
+                                <state key="normal" title="GO AGAIN">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jUs-1b-0c1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoM-oy-quW">
+                                <rect key="frame" x="57" y="217" width="311" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="40"/>
+                                <state key="normal" title="Click for results!">
+                                    <color key="titleColor" red="0.33329623940000003" green="0.33335167170000002" blue="0.33329352740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickForResultsButton:" destination="Uiw-rm-zcC" eventType="touchUpInside" id="7GU-Pl-UvL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77317482230000001" green="0.7524681687" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JHJ-OF-d1U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wbb-LX-IUW"/>
+                    <connections>
+                        <outlet property="songTitleResult" destination="SfY-7m-KLs" id="Qo6-87-4ia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6S-kH-HP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430.434782608696" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="quizAppBack" width="1080" height="1920"/>
+        <image name="rsz_cody-board-y4d9lt7uzhm-unsplash" width="200" height="200"/>
+        <image name="rsz_danielle-dolson-yen9xfiuafy-unsplash" width="200" height="200"/>
+        <image name="rsz_diego-gonzalez-p92w9igyahg-unsplash" width="200" height="200"/>
+        <image name="rsz_kourosh-qaffari-rrhhzityizg-unsplash" width="200" height="200"/>
+        <image name="rsz_leonides-ruvalcabar-kvczffawb5y-unsplash" width="250" height="250"/>
+        <image name="rsz_patrick-assale-3384kpjfeko-unsplash" width="200" height="200"/>
+        <image name="rsz_sbareilles" width="200" height="200"/>
+        <image name="rsz_tswift" width="200" height="200"/>
+        <image name="rsz_twice" width="200" height="200"/>
+    </resources>
+</document>
